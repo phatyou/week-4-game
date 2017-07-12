@@ -13,17 +13,17 @@ console.log(score);
 //=======================================================================================
 
 //Random number served up; goal: to win the game, match this number//
-var randomNumberGoal = Math.floor((Math.random()* 101) + 19);
+var randomNumberGoal = Math.floor((Math.random()* 101 +1) + 19); //Math.floor(Math.random() * (max - min +1)) + min, source: https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
 console.log(randomNumberGoal); //Testing and Debugging
 
 //Random value assignment to crystal (need to have a way to generate four random numbers and associate them with the each of the different colored crystals, but would a for loop be more efficient here?//
-var red = Math.floor((Math.random()* 11) + 1);
+var red = Math.floor((Math.random()* 11 +1) + 1);
 console.log(red);
-var blue = Math.floor((Math.random()* 11) + 1); //So repetitive
+var blue = Math.floor((Math.random()* 11 +1) + 1); //So repetitive
 console.log(blue);
-var green = Math.floor((Math.random()* 11) + 1); //So repetitive
+var green = Math.floor((Math.random()* 11 +1) + 1); //So repetitive
 console.log(green);
-var yellow = Math.floor((Math.random()* 11) + 1); //So repetitive
+var yellow = Math.floor((Math.random()* 11 +1) + 1); //So repetitive
 console.log(yellow);
 
 var writeToDom = function(){
