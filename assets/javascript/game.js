@@ -9,6 +9,14 @@ var losses = 0;
 var score = 0;
 console.log(score);
 
+var audio = new Audio('sound.mp3');
+
+// var audio = new Audio("https://p.scdn.co/mp3-preview/ed5a443bc86176135ebca8a114f66f4d814d4c90");
+
+// Audio.prototype.stop = function() {
+//     this.pause();
+//     this.currentTime = 0;
+// };
 // Mixed(?) Global Variables and Functions
 //=======================================================================================
 
@@ -54,6 +62,7 @@ var scoreCheck = function (){
 	if (score === randomNumberGoal) {
 		wins++;
 		alert('You are good enough!');
+		audio.play();
 		reset();
 }
 	else if (score > randomNumberGoal) {
@@ -65,6 +74,11 @@ var scoreCheck = function (){
 		writeToDom();
 }}
 
+function stopAudio(audio) {
+    audio.pause();
+    audio.currentTime = 0;
+}
+
 var scoreReset = function (){
 	wins = 0;
 	losses = 0;
@@ -75,33 +89,36 @@ var scoreReset = function (){
 	$('#score').text(score);
 	$('#number').text(randomNumberGoal);
 
-	$(document).ready(function(){
+//Main process for da game
+
+$(document).ready(function(){
 	
 		$('#red').click(function(){
 		score = score + red;
-		writeToDom();
+		// writeToDom();
 		scoreCheck();
 	})
 
 		$('#blue').click(function(){
 		score = score  + blue;
-		writeToDom();
+		// writeToDom();
 		scoreCheck();
 	})
 
 		$('#green').click(function(){
 		score = score  + green;
-		writeToDom();
+		// writeToDom();
 		scoreCheck();
 	})
 		
 		$('#yellow').click(function(){
 		score = score  + yellow;
-		writeToDom();
+		// writeToDom();
 		scoreCheck();
 	})
 
 		$('#reset').click(function(){
-		scoreReset();	
+		scoreReset();
+		stopAudio(audio);	
 	})
 });

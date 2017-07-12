@@ -12,10 +12,25 @@ body {
 	background-color: #F1D487;
 }
 
-.JewelStyle {
-	width: 80px;
+li {
+	font-size: 1.6rem;
 }
+
+.Jewel {
+	padding: 10px;
+}
+
+#yellow {
+	width: 130px;
+	margin-left: 27px;
+}
+
 
 h4 {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 2rem;
+}
+
+#button {
+	float: left;
 }
