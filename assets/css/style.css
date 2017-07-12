@@ -1,0 +1,21 @@
+body {
+	background: url("../images/bg.jpg") center center;
+    background-size: cover;
+}
+
+.jumbotron {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.panel-heading {
+	background-color: #F1D487;
+}
+
+.JewelStyle {
+	width: 80px;
+}
+
+h4 {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}

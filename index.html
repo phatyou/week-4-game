@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="assets/css/style.css">
+	
+	<head>
+		<title>Crystal Collectorz!</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class= "jumbotron">
+				<h1>Crystal Collector</h1>
+			</div>
+			<!--  How the game is played  -->
+			<div class="panel panel-default">
+				<div class= "panel-heading">
+					<div class="panel-title"><strong>How to Play</stong></div>
+				</div>
+				
+				<div class= "panel-body">
+					<ul>
+						<li>You will be given a random number at the start of the game that you will have to match.</li>
+						<br>
+						<li>There are four crystals below. Each time a crystal is clicked, a specific amount of points will be added to your total score.</li>
+						<br>
+						<li>If you successfully match your total score to the random number, you win! If you go over the number, sorry, but you lose!</li>
+						<br>
+						<li><strong>The value of each crystal will be hidden from you until you click on it. (Basic Math!)</strong></li>
+						<br>
+						<li>You can play again (and again!), but be warned that the hidden points for each crystal will change each time.</li>
+						<br>
+				</div>
+			</div>
+			<!-- End of game play -->
+			
+			<div class="panel panel-default">
+				<div class= "panel-body">
+					<h4 id = "firstbox">Number to match: <span id= "number"></span></h4>
+					<h4 id = "secondbox">Your score: <span id="score"></span></h4>
+				</div>
+			</div>
+
+			<div class="panel panel-default">
+				<div class= "panel-body">
+					<img src="assets/images/image1.png" class=Jewel id='red'>
+					<img src="assets/images/image2.png" class=Jewel id='blue'>
+					<img src="assets/images/image3.png" class=Jewel id= 'green'>
+					<img src="assets/images/image4.png" class=Jewel id= 'yellow'>
+				</div>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h4 id = "firstbox">Wins: <span id= "wins"></span></h4>
+					<h4 id = "secondbox">Losses: <span id= "losses"></span></h4>
+				</div>
+				 <div id="buttons">
+      				<button id="reset"><h2>Reset</h2></button>
+    			</div>
+			</div>
+		</div>
+		
+		<script src="assets/javascript/game.js"></script>
+	</body>
+</html>
